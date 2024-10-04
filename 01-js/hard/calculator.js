@@ -16,6 +16,51 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+  constructor(){
+    this.result = 0;
+  }
+
+  add(num){
+    this.result += num;
+  }
+
+  subtract(num){
+    this.result -= num;
+  }
+
+  multiply(num){
+    this.result *= num;
+  }
+  divide(num){
+    if (num === 0){ throw new Error ;}
+    this.result /= num;
+  }
+  clear(){
+    this.result = 0 ;
+  }
+  getResult(){
+    return this.result;
+  }
+
+  calculate(exp){
+    const sanExp = exp.replace(/\s+/g,'')
+
+    if (/[^0-9+\-*/().]/.test(sanExp)){
+      throw new Error("invalid char exp")
+    }
+    if (/\/0(?!\d)/.test(sanExp)) {
+      throw new Error;
+    }
+    try{
+      this.result = eval(sanExp);
+
+    }catch (error){
+      throw new Error("invalid exp ");
+    }
+
+  }
+
+}
 
 module.exports = Calculator;

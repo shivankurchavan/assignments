@@ -14,7 +14,27 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  const categorySpending = {};
+
+  transactions.forEach((transaction) => {
+    const { category, price } = transaction;
+
+    // If the category already exists, add the price to the existing total
+    if (categorySpending[category]) {
+      categorySpending[category] += price;
+    } else {
+      // If the category doesn't exist, create it and set the initial price
+      categorySpending[category] = price;
+    }
+  });
+
+  // Convert the categorySpending object into an array of objects
+  const result = Object.keys(categorySpending).map((category) => ({
+    category: category,
+    totalSpent: categorySpending[category],
+  }));
+
+  return result;
 }
 
 module.exports = calculateTotalSpentByCategory;
