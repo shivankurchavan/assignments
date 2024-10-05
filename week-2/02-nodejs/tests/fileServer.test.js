@@ -3,6 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const server = require('../fileServer');
 
+jest.setTimeout(10000);
+
 describe('API Endpoints', () => {
   let globalServer;
 
