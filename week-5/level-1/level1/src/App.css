@@ -1,0 +1,63 @@
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Card styling */
+  .card-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .card-container h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .card-container p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .card-container h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .card-container .interests {
+    color: #555;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .social-buttons button:hover {
+    background-color: #005bb5;
+  }
+  
