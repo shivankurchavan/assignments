@@ -1,0 +1,74 @@
+div {
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Basic container styling */
+.top {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Styling for the profile image container */
+.pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Styling for the details section */
+.details {
+    flex-grow: 1;
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+/* Styling for the bottom container */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Styling for each bin */
+.bin {
+    text-align: center;
+    flex: 1;
+}
+
+.bin h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.bin p {
+    margin: 5px 0 0;
+    color: #888;
+}
