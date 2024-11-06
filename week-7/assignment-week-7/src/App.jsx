@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import { Assignment1 } from './component/Assignment1'
 import { Assignment2 } from './component/Assignment2'
+import { Assignment4 } from './component/Assignment4'
+import { Assignment5 } from './component/Assignment5'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +20,9 @@ function App() {
           posts:100
         }
       }/> */}
-      <Assignment2 />
+      {/* <Assignment2 /> */}
+      {/* <Assignment4/> */}
+      {/* <Assignment5 username="shivankurchavan"/> */}
     </>
   )
 }

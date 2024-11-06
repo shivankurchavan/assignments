@@ -1,0 +1,28 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100vw;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.top {
+    display: flex;
+    align-items: center;
+}
+.pic img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.details h2 {
+    margin: 0;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.bin h2 {
+    margin: 0;
+}
